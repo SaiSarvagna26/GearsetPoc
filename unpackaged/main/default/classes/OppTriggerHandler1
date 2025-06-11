@@ -30,6 +30,6 @@ public class OppTriggerHandler1 {
             if (!emailsWithTargetObjectId.isEmpty()) {
                 Messaging.sendEmail(emailsWithTargetObjectId);
             }
-        }        
+        }     */   
     }    
 }
