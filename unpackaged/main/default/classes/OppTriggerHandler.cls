@@ -18,7 +18,7 @@ public class OppTriggerHandler {
                     opportunityToDelete.add(opp.OwnerId);
                 }
             }
-            List<User> userEmailList = new List<User>([SELECT Id, Email FROM User WHERE Id IN : opportunityToDelete]);
+            /*List<User> userEmailList = new List<User>([SELECT Id, Email FROM User WHERE Id IN : opportunityToDelete]);
             List<Messaging.SingleEmailMessage> emailsWithTargetObjectId = new List<Messaging.SingleEmailMessage>();
             for (User u : userEmailList) {
                 Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
@@ -29,7 +29,7 @@ public class OppTriggerHandler {
             }
             if (!emailsWithTargetObjectId.isEmpty()) {
                 Messaging.sendEmail(emailsWithTargetObjectId);
-            }
+            }*/
         }        
     }    
 }
