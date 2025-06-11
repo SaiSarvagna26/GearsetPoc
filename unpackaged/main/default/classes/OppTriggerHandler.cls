@@ -14,7 +14,7 @@ public class OppTriggerHandler {
         }
         else{
             for(Opportunity opp : opportunityDetails){
-                if(profileName == 'System Administrator' && opp.StageName == 'Closed Lost' ){
+                if(profileName == 'System Administrator' && opp.StageName == 'Closed Won' ){
                     opportunityToDelete.add(opp.OwnerId);
                 }
             }
