@@ -8,7 +8,7 @@ public class OppTriggerHandler {
         if(profileName != 'System Administrator'){          
             for(Opportunity opp : opportunityDetails){
                 if(opp.StageName == 'Closed Won' || opp.StageName == 'Closed Lost'){
-                    opp.addError('Only System Administrator Can Delete Closed Opportunities.');
+                    opp.addError('System Administrator can only delete Closed Opportunities.');
                 }
             }
         }
