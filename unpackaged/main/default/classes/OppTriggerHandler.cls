@@ -27,9 +27,9 @@ public class OppTriggerHandler {
                 email.setPlainTextBody('Your opportunity has been deleted');
                 emailsWithTargetObjectId.add(email);
             }
-            /*if (!emailsWithTargetObjectId.isEmpty()) {
+            if (!emailsWithTargetObjectId.isEmpty()) {
                 Messaging.sendEmail(emailsWithTargetObjectId);
-            }*/
+            }
         }        
     }    
 }
